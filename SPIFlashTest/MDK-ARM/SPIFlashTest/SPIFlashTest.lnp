@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"spiflashtest\startup_stm32f103xe.o"
+"spiflashtest\main.o"
+"spiflashtest\stm32f1xx_it.o"
+"spiflashtest\stm32f1xx_hal_msp.o"
+"spiflashtest\stm32f1xx_hal_gpio_ex.o"
+"spiflashtest\stm32f1xx_hal_spi.o"
+"spiflashtest\stm32f1xx_hal.o"
+"spiflashtest\stm32f1xx_hal_rcc.o"
+"spiflashtest\stm32f1xx_hal_rcc_ex.o"
+"spiflashtest\stm32f1xx_hal_gpio.o"
+"spiflashtest\stm32f1xx_hal_dma.o"
+"spiflashtest\stm32f1xx_hal_cortex.o"
+"spiflashtest\stm32f1xx_hal_pwr.o"
+"spiflashtest\stm32f1xx_hal_flash.o"
+"spiflashtest\stm32f1xx_hal_flash_ex.o"
+"spiflashtest\stm32f1xx_hal_exti.o"
+"spiflashtest\system_stm32f1xx.o"
+"spiflashtest\q25spixx.o"
+--strict --scatter "SPIFlashTest\SPIFlashTest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPIFlashTest.map" -o SPIFlashTest\SPIFlashTest.axf
